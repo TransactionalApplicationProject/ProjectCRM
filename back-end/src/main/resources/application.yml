@@ -1,0 +1,25 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    username: purple_team
+    password: crmproject
+    url: jdbc:postgresql://localhost:5432/crm-project
+
+  jpa:
+#    generate-ddl: true  #ddl stands "Data Definition Language"
+#    hibernate:
+#      ddl-auto: update
+
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        jdbc:
+          batch_size: 10
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+# prevent empty beans can't be serialized
+  jackson:
+    serialization:
+      fail-on-empty-beans: false
