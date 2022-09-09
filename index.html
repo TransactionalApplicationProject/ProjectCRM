@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/00-login.css" />
+  <link rel="stylesheet" type="text/css" href="css/styleguide.css" />
+  <link rel="stylesheet" type="text/css" href="css/globals.css" />
+  <script type="text/javascript" src="./scripts/login.js"></script>
+</head>
+
+<body>
+<div>
+  <input type="hidden" id="anPageName" name="page" value="00-login" />
+  <div class="x00-login screen">
+    <img class="image_of_sunflower" src="img/image-of-sunflower-1x-png@1x.png" />
+    <div class="login-panel">
+      <img class="profile_image" src="img/profile-image@1x.png" />
+      <div class="input_fields">
+        <div id="messageLogin" style="display:none; color: red; font-size: x-large; padding-bottom: 2rem;"></div>
+        <div class="_username-container">
+          <div class="input_username border-1px-dove-gray">
+            <div class="input_username_icon"><img class="icon-user" src="img/union-1x-png@1x.png" /></div>
+          </div>
+          <input
+                  id="user"
+                  class="label_enter"
+                  name="label_enter_username3"
+                  placeholder="Enter your username"
+                  type="text"
+                  required
+          />
+        </div>
+        <div class="_password-container">
+          <div class="input_password border-1px-dove-gray">
+            <div class="input_password_icon">
+              <div class="icon">
+                <img
+                        class="a0ff502c-3cea-4063-8014-075d2170c347"
+                        src="img/a0ff502c-3cea-4063-8014-075d2170c347@1x.png"
+                />
+                <div class="icon_area"></div>
+              </div>
+            </div>
+          </div>
+          <input
+                  id="password"
+                  class="label_enter"
+                  name="label_enter_password4"
+                  placeholder="Enter your password"
+                  type="password"
+                  required
+          />
+        </div>
+        <div class="button_login border-1px-dove-gray" id="login" onclick="login()"><h1 class="label_login">LOGIN</h1></div>
+      </div>
+      <div class="label_forget_password"><span class="span0">Forget password? </span><span>Reset Password</span></div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
